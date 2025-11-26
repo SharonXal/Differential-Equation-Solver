@@ -1,4 +1,4 @@
-# Chebyshev-Based Differential Equation Solving with QSVT
+## Chebyshev-Based Differential Equation Solving with QSVT
 
 This tutorial demonstrates how to use **Quantum Singular Value Transformation (QSVT)** as the core engine of a **Chebyshev-based differential equation solver**.
 
@@ -27,6 +27,17 @@ We will build up the solver in stages:
 5. Solve linear systems with **full complex amplitudes** (tomography-based readout).
 6. Solve **real-valued** linear systems using a **Hadamard-test-style LCU construction**, so that the solution can be recovered directly from measurement statistics.
 7. Conclude with a **roadmap for future work**, including quantum Chebyshev transforms and multi-ancilla block encodings.
+
+## Acknowledgements
+
+I gratefully acknowledge the foundational tools and open-source frameworks that made this work possible, including:  
+**Qiskit** for quantum circuit synthesis and simulation, **Pennylane** for block-encoding support, and **PYQSP** for phase-sequence generation in Quantum Singular Value Transformation (QSVT).
+
+This work also benefited from discussions with my supervisor **Prof. Anil Shaji** (Professor at School of Physics, IISER TVM) and community resources in quantum algorithms, spectral methods, and block-encoding techniques.  
+The implementation and tutorial presented here were developed independently by **Sharon Xalxo** (2025) as part of ongoing research into quantum algorithms for differential equations, Chebyshev spectral discretizations, 
+and QSVT-based linear system solvers.
+
+Users of this repository or associated implementations are kindly asked to cite this work using the recommended citation or Bib\TeX{} entry provided in the documentation.
 
 ## User Guide
 
@@ -74,7 +85,6 @@ The notebooks are self-contained and can be executed directly on standard Qiskit
   $\gamma = 1 + v^\top z$ and reconstruct the final Chebyshev coefficients and nodal solutions.
 
 
-
 ### How to Cite This Work
 
 If you use this repository, its methods, or the QSVT–Chebyshev linear-system solver in academic work, please cite it as follows:
@@ -83,7 +93,6 @@ If you use this repository, its methods, or the QSVT–Chebyshev linear-system s
 
 > This work uses the Chebyshev–QSVT differential equation solver developed by  
 > **Sharon Xalxo (2025)**, including block-encoding methods, PyQSP-derived phase sequences, and real-valued Hadamard-test QSVT extraction circuits.
-
 
 ### BibTeX Citation
 
